@@ -1,13 +1,14 @@
 module top(
-	input  clk,
-	input  RX,
-	output TX,
-	output reg LED1,
-	output reg LED2,
-	output reg LED3,
-	output reg LED4,
-	output reg LED5
-);
+	      input      clk,
+	      input      RX,
+	      output     TX,
+	      output reg LED1,
+	      output reg LED2,
+	      output reg LED3,
+	      output reg LED4,
+	      output reg LED5
+              );
+
 	parameter integer BAUD_RATE = 9600;
 	parameter integer CLOCK_FREQ_HZ = 12000000;
 	localparam integer HALF_PERIOD = CLOCK_FREQ_HZ / (2 * BAUD_RATE);
