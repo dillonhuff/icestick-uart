@@ -1,4 +1,4 @@
-module top (
+module top(
 	input  clk,
 	input  RX,
 	output TX,
@@ -24,7 +24,7 @@ module top (
 		LED2 = 0;
 		LED3 = 0;
 		LED4 = 0;
-		LED5 = 0;
+		LED5 = 1;
 	end
 
 	always @(posedge clk) begin
