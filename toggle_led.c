@@ -28,9 +28,13 @@ int main (int argc, char * const argv[]) {
   tcsetattr(fd, TCSANOW, &options);
 
   int res = write(fd, "2", sizeof(char));
+  printf("written = %d\n", res);
 
-  printf("written = %d", res);
+  sleep(2);
 
+  res = write(fd, "2", sizeof(char));
+  printf("written = %d\n", res);
+  
   close(fd);
 
   return 0; // End of the program
